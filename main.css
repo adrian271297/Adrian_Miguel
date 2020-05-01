@@ -470,7 +470,7 @@ background: linear-gradient(90deg,rgba(153,97,130,1)  10%, rgba(128,4,68,1) 100%
 
 /*---------------------ACORDEON------------------------------*/
 .accordion .item.active{
-	max-height:700px;
+	max-height:7000px;
 	height: auto;
 	overflow:hidden;
 }
