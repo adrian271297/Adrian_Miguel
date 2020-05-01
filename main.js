@@ -64,9 +64,27 @@ function Info_Visible(){
 			info_expander.classList.add("info_visible");
 			degradar_body.classList.add("body_difuso");
 			degradar_acordeon.classList.add("accordion_difuso");
-			visible=true;	
+			visible=true;
 		}
 		
+	
+
+		setTimeout(function(){ 
+		
+
+
+	if(info_expander.classList.contains('info_visible')){
+		console.log("cumpl");
+		$(document).one("click",function(){
+		info_expander.classList.remove("info_visible");
+		degradar_acordeon.classList.remove("accordion_difuso");
+		degradar_body.classList.remove("body_difuso");
+	})
+	}
+	 }, 500);
+	
+
+
 	}
 
 /*function Desplegar(){
@@ -95,7 +113,7 @@ $(function(){
 	$('.fa-bars').click(function(){
 		$('nav ul li').addClass("show");
 		$('.logo-space').addClass("change");
-		$('#contenedor').removeClass("container");
+		$('#contenedor').removeClass("container_nav");
 		$('#contenedor').addClass("container_on");
 		$('nav ul').removeClass("naveg");
 		$('.fa-times').css("display","block");
@@ -104,7 +122,7 @@ $(function(){
 	$('.fa-times').click(function(){
 		$('nav ul li').removeClass("show");
 		$('.logo-space').removeClass("change");
-		$('#contenedor').addClass("container");
+		$('#contenedor').addClass("container_nav");
 		$('#contenedor').removeClass("container_on");
 		$('nav ul').addClass("naveg");
 		$('.fa-bars').css("display","block");
@@ -252,6 +270,7 @@ class TabsManager{
 	}
 	setIndicatorWidth(){
 		this.indicator.style.width = this.controls[0].clientWidth + "px";
+		console.log("patata");
 	}
 
 	bindEvents(){
@@ -277,6 +296,22 @@ class TabsManager{
 
 new TabsManager(".tabs",".tabs-control a", ".indicator")
 
+
+
+ 
+
+
+
+function Indicator_With(){
+	let controls=document.querySelectorAll('.tabs-control a');
+	let indicator=document.querySelector('.indicator');
+	indicator.style.width = controls[0].clientWidth + "px";
+
+	let controls_datos=document.querySelectorAll('.tabs-control_datos_interes a');
+	let indicator_datos=document.querySelector('.indicator_datos_interes');
+	indicator_datos.style.width = controls_datos[0].clientWidth + "px";
+
+}
 
 /*---------------------AÑADIR CLASE EN TABLA DE SOFTWARE-------------*/
 
@@ -333,9 +368,9 @@ class tit_exp_Animation{
 	}
 
 	validateMultiple(selectedItem){
-		if(this.multiple) return;
+		
 		this.decoradoranimation.querySelectorAll(".decorador").forEach(element => {
-			let info= document.querySelector(".overlay")
+			let info= document.querySelector(".popup")
 			element.addEventListener('mouseout',()=>{
 				info.classList.remove('element_visible');
 			})
@@ -349,9 +384,30 @@ class tit_exp_Animation{
 	}
 }
 
+
+
+
 (function(){
 	new tit_exp_Animation(".software")
 })()
+
+
+$(document).click(function(){
+	console.log("HI");
+	let info= document.querySelector(".popup");
+
+
+	let item=document.querySelector(".decorador");
+	if(item.classList.contains('element_visible')){
+    info.classList.remove('element_visible');}
+    // si lo deseamos podemos eliminar el evento click
+    // una vez utilizado por primera vez
+
+})
+
+
+
+
 
 /*---------------------MOUSEOVER EN NIVLE-------------*/
 
@@ -427,14 +483,14 @@ class DatosInteresManager{
 		ev.preventDefault();
 		let button=ev.currentTarget;
 		let position =IndexForSiblings.get(button);
-		this.indicator.style.top=((position*67)+60)+"px";
+		this.indicator.style.top=((position*60)+70)+"px";
 		this.openTab(button.hash);
 
 	}
 	openTab(hash){
 		let tab = document.querySelector(hash);
 		let position=IndexForSiblings_interes.get(tab);
-		this.tabs.querySelector(".container_datos_interes").style.top=-(position*(this.tabs.clientHeight)-30)+"px";
+		this.tabs.querySelector(".container_datos_interes").style.top=-(position*(this.tabs.clientHeight))+"px";
 	}
 }
 
@@ -534,3 +590,34 @@ Header_Fixed();
 Info_Expand_Fixed();
 
 
+var resizeTimer;
+
+       //Event to handle resizing
+       $(window).resize(function () 
+       {
+           clearTimeout(resizeTimer);
+           resizeTimer = setTimeout(Resized, 100);
+       });
+
+       //Actual Resizing Event
+       function Resized() 
+       {
+           Indicator_With();
+
+       };
+
+
+function primera_vez(){
+	  $(window).one("scroll",function() {
+if ($(window).scrollTop() > 80) {
+	console.log("4kl4j");
+let info_expander = document.querySelector(".info_expand");
+	Info_Visible();
+  
+  };
+});
+
+}
+
+
+ 

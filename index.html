@@ -7,14 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="./main.css">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Baloo+Thambi+2:400,700&display=swap" rel="stylesheet">
 	<link href="./font-awesome/css/all.css" rel="stylesheet">
-	<link href="./assets/animate.css" rel="stylesheet">
+	<link href= "./assets/animate.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet">
 	
 	
 </head>
-<body>
+<body onload="primera_vez();">
 	<div class="info_inicial">
 		<ul>
 			<li class="a">Adrián Miguel Campo</li>
@@ -62,15 +62,16 @@
 		<div class="container_nav" id="contenedor" >
 			<ul class="naveg">
 				 
-      			
-      			<li class="submenu menu modo">
+      			<div class="hid">
+      			<li class="submenu menu prueba " id="submenu_id_2 navegar">
 			        <i class="far fa-compass"></i>
 			        <a   class=" btn_nav animated_border cool-link2" >NAVEGAR:</a>
-			        <ul id="submenu_id">
-			          <li>
+
+			        <ul >
+			          <li >
 			            <a  class="  animated_border cool-link2"  onclick="btn_presentacion()">PRESENTACION</a>
 			          </li>
-			          <li>
+			          <li >
 			            <a  class="  animated_border cool-link2"  onclick="btn_sit_actual()">SITUACIÓN ACTUAL</a>
 			          </li>
 			          <li>
@@ -90,13 +91,14 @@
 			          </li>
 
 			        </ul>
-			      </li>
+			      </li></div>
 				<li class="modo"><a  class="btn_nav animated_border cool-link2" onclick="btn_contacto()" class="animated_border cool-link2">CONTACTO</a></li>
 
 				<li class="submenu menu " id="submenu_id_2">
 			        <i class="far fa-compass"></i>
 						<a  class=" btn_nav animated_border cool-link2">EMPRESAS</a>
-						<ul class="ul_empresas">
+
+						<ul>
 						 <li><i class="fas fa-link"></i>
 			            <a href="https://www.nicolascorrea.com/es" class="  animated_border cool-link2" >NICOLÁS CORREA</a>
 			          </li>
@@ -154,11 +156,18 @@
 							</div>
 						</div>
 				</header>	
-				<p class="txt_presentacion" id="presentacion">Saludos. 
+				<p class="txt_presentacion" id="presentacion">Saludos soy Adrián Miguel y en esta página web quiero mostrar mis aptitudes curriculares y personales.
+
+				Inicié  el grado en Ingenieria Electrónica Industrial Automática en la Universidad de Burgos en Septiembre de 2015 y lo finalicé en Junio de 2019.
+				Actualmente tengo 22 años y tengo una experiencia laboral relacionada con la mi carrera de aproximadamente un año.
+
 				Soy una persona responsable y trabajadora, con habilidad e ilusión para aplicar mis capacidades en un entorno laboral, y abierto a adquirir de éste, nuevos conocimientos y experiencias. 
 
-				Actualmente poseo experiencia en diseño de cuadros eléctricos con EPLAN  P8 y conocimientos de automatización y hardware industrial y  de robótica. (TIA PORTAL, ROBOTSTUDIO).
-				Me gustaría formar parte de una empresa donde pueda aportar mis conocimientos de EPLAN y conocimientos industriales, y si dicha empresa también es del ámbito adquirir experiencia en automatización y robótica, o en las áreas propias de la empresa.</p>
+				Actualmente poseo experiencia en diseño de cuadros eléctricos con EPLAN P8 y conocimientos de automatización, hardware industrial y en diseño web.
+
+				Quiero poder aprobechar todas las oportunidades posibles, por tanto estoy abierto a nuevos retos, puestos, proyectos... por ello, si está interesado puede contactar conmigo a través del formulario de contacto.
+
+				Me gustaría formar parte de una empresa donde pueda aportar mi breve pero interesante experiencia y a adquirir experiencia en automatización, robótica, programación...en las áreas propias de la empresa.</p>
 			</div>
 		
 			<div class="item active">
@@ -176,7 +185,9 @@
 				<div class="situacion-actual">
 					<img class="img-nc box_3d" src="./images/gnc-logo.png">
 					<div class="txt_situacion">
-					<p>Actualmente me encuentro trabajando en Nicolas Correa S.A, cursando una beca de formación a través de la Fundación de la Universidad de Burgos. Me encuentro en el departamento de ingenieria, enfocado como actividad principal en el diseño eléctrico con Eplan P8 y de forma menos persistente en el desarrollo de otras áreas de la ingenieria.
+					<p>Actualmente me encuentro trabajando en Nicolas Correa S.A (Burgos), cursando una beca de formación a través de la Fundación de la Universidad de Burgos.
+
+					 Me encuentro en el departamento de ingenieria, enfocado como actividad principal en el diseño eléctrico con Eplan P8 y en el desarrollo de otras áreas de la ingenieria.
 					</p>	
 					<img class="img-eplan box_3d" src="./images/eplan.png">
 					<img class="img-ubu box_3d" src="./images/ubu.jpg" id="actual"></div>
@@ -212,20 +223,18 @@
     								<li >Diseño de cuadros eléctricos de automatización industrial. (EPLAN)</li>
     								<li>Realización de estudios de iluminación industrial. (Dialux EVO)</li>
     								<li>Gestión de plataformas CAE. (CtaimaCAE, E.coordina,UCAE)</li>
-    								<li>Dimensionado de líneas eléctricas. (Demelet CIEBT).</li>
+    								<li>Realización de estudios y dimensionado de líneas eléctricas. (Demelet CIEBT).</li>
     								<li>Seguimiento y gestión de proyectos.</li>
     							</ul >
     						</div>
     						<div class="txt_sinter">
-    							<p class="title animated_border cool-link">SinterPack (Sinter Ibérica Packcaging)</p>
+    							<p class="title animated_border cool-link">SinterPack (Sinter Ibérica Packaging)</p>
     							<p class="subtitle">01/12/2019 - 01/03/2020</p>
     							<p class="content_i">En Sinterpack, como cesión de la anterior empresa, realicé las siguientes funciones:</p>
     							<ul class="texto">
     								<li>Diseño de cuadros eléctricos de automatización industrial. (EPLAN)</li>
-    								<li>Realización de estudios de iluminación industrial. (Dialux EVO)</li>
-    								<li>Gestión de plataformas CAE. (CtaimaCAE, E.coordina,UCAE)</li>
-    								<li>Dimensionado de líneas eléctricas. (Demelet CIEBT).</li>
-    								<li>Seguimiento y gestión de proyectos.</li>
+    								<li>Creación, interpretación y modificacion de planos. (AutoCad)</li>
+    								
     							</ul>
     							
     						</div>
@@ -248,10 +257,17 @@
 				<div class="centrar" >	
 					<ul class="flex_container " id="formacion">
 						<li class="flex_item inner-wrapper wrapper-16 "><p class=" hover-16 ">Graduado en Ingeniería Electrónica Industrial Automática por la Universidad
-							de Burgos. (julio de 2019)</p></li>
-						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Título P.R.L Nivel Básico 60 horas.</p></li>
-						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Curso Gestión de la Calidad por AENOR: ISO.9001:2015.</p></li>
-						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Curso diseño y mantenimiento de instalaciones fotovoltaicas. (100h)</p></li>
+							de Burgos. 
+						(julio de 2019)</p></li>
+						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Títulado P.R.L 
+						Nivel Básico 
+						(60 horas)
+					(Previaula Burgos).</p></li>
+						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Titulado Gestión de la Calidad
+						ISO.9001:2015 
+					(AENOR)</p></li>
+						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Curso cálculo y diseño de instalaciones fotovoltaicas. 
+						(100h)</p></li>
 						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Inglés bachillerato.</p></li>
 						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Titulo en diseño web Frontend y Backend (Html,Css,Js,NodeJS...)</p></li>
 						<li class="flex_item inner-wrapper wrapper-16"><p class=" hover-16">Titulo de trabajos en altura y Plataforma elevadora</p></li>
@@ -287,25 +303,23 @@
 					<div class="tabs">
 						<div class="container_aptitudes">
 							<div class="tab" id="info">
-								<p>Soy una persona responsable y trabajadora, con habilidad e ilusión para aplicar
-									mis capacidades en un entorno laboral, y abierto a adquirir de éste nuevos
-									conocimientos.</p>
-								
+								<p>Me considero una persona con voluntad y dedicación, me propongo metas y hago todo lo posible por cumplirlas. 
+								Un factor importante para ello es mi capacidad para ser autodidacta y tambien siempre abierto a aprender de la gente que me aporte.
+								En un entorno laboral, dichas cualidades las materializo en mi gran interes e impliación en un puesto o proyecto. Siempre con ganas de aprender cosas nuevas y emprender nuevos retos y responsabilidades.
 							</div>
 							
 						
 							<div class="tab" id="details">
-								<p>Tengo un gran interés por la innovación tecnológica, la sensorización y
-									automatización, la movilidad eléctrica y las energías renovables.Como “hobbie” desarrollo modestos proyectos basados en microcontroladores
-										(Arduino).Tengo un gran interés por la innovación tecnológica, la sensorización y
-									automatización, la movilidad eléctrica y las energías renovables.Como “hobbie” desarrollo modestos proyectos basados en microcontroladores
-										(Arduino).Tengo un gran interés por la innovación tecnológica, la sensorización y
-									automatización, la movilidad eléctrica y las energías renovables.Como “hobbie” desarrollo modestos proyectos basados en microcontroladores
-										(Arduino).</p>
+				<p>Tengo un gran interés por la innovación tecnológica, la sensorización y automatización, la movilidad eléctrica y las energías renovables.
+				Como “hobbie” desarrollo modestos proyectos basados en microcontroladores (Arduino), también me gusta dedicar teimpo al  desarrollo de paginas web.
+
+				Me gusta estar al tanto de las noticias e innovaciónes tecnológicas y las empresas que lo impulsan ( Tesla, Xiaomi, SpaceX...)</p>
 
 							</div>
 							<div class="tab" id="lorem">
-								<p>Realizo actividades en contacto con la naturaleza, senderismo, ciclismo...</p>
+								<p>En el ambito deportivo disfruto realizando actividades en contacto con la naturaleza, senderismo, ciclismo...
+
+								También incluiria como afición el desarrollo web, dado que lo hago habitualmente en mis tiempos libres y me resulta muy satisfactorio.</p>
 
 							</div>
 						</div>
@@ -344,16 +358,20 @@
 						<div class="popup overlay">
 	
 						<div class="content_exp">
-							<img class="decorador_info"   src="./images/EXP.png"><p>Software asociado a mi Experiencia Laboral</p>
+							<div class="aaa">
+							<img class="decorador_info"   src="./images/EXP.png"><p>Software asociado a mi Experiencia Laboral</p></div>
+							<div class="bbb">
 							<img class="decorador_info"  src="./images/TIT.png"><p>Posesión de título académico.</p>
-						</div></div>
-
+						</div></div></div>
+<!--
 						<div class="popup overlay_Nivel">
 						
 						<div class="content_exp">
 							<img class="decorador_info"  src="./images/EXP.png"><p>Software asociado a mi Experiencia Laboral</p>
 							<img class="decorador_info"  src="./images/TIT.png"><p>P.</p>
 						</div></div>
+
+					-->
 					</section>
 
 
@@ -562,9 +580,9 @@
 					<div class="contenedor_interes">
 					<div class="card_datos_interes ">
 					<nav class="tabs-control_datos_interes">
-						<a href="#info">Sobre mí:</a>
-						<a href="#details">Mis inquietudes:</a>
-						<a href="#lorem">Mis aficiones:</a>
+						<a href="#info">Cualidades:</a>
+						<a href="#details">Capacidades:</a>
+						<a href="#lorem">Electricidad:</a>
 
 						<div class="indicator_datos_interes" id="interes"></div>
 					</nav>
@@ -572,29 +590,18 @@
 					<div class="tabs_datos_interes">
 						<div class="container_datos_interes">
 							<div class="tab_datos_interes" id="info">
-								<p>Soy una persona responsable y trabajadora, con habilidad e ilusión para aplicar
-									mis capacidades en un entorno laboral, y abierto a adquirir de éste nuevos
-									conocimientos.</p>
+								<p>En general, se me dan bien los ordenadores, tanto a nivel de trabajar con ellos como su configuración y resolución de problemas en los mismos, así mismo, poseo amplios conocimientos sobre hardware de pc´s.</p>
 								
 							</div>
 							
 						
 							<div class="tab_datos_interes" id="details">
-								<p>Tengo un gran interés por la innovación tecnológica, la sensorización y
-									automatización, la movilidad eléctrica y las energías renovables.Como “hobbie” desarrollo modestos proyectos basados en microcontroladores
-										(Arduino).Tengo un gran interés por la innovación tecnológica, la sensorización y
-									automatización, la movilidad eléctrica y las energías renovables.Como “hobbie” desarrollo modestos proyectos basados en microcontroladores
-										(Arduino).Tengo un gran interés por la innovación tecnológica, la sensorización y
-									automatización, la movilidad eléctrica y las energías renovables.Como “hobbie” desarrollo modestos proyectos basados en microcontroladores
-										(Arduino).(Arduino).Tengo un gran interés por la innovación tecnológica, la sensorización y
-									automatización, la movilidad eléctrica y las energías renovables.Como “hobbie” desarrollo modestos proyectos basados en microcontroladores
-										(Arduino).Tengo un gran interés por la innovación tecnológica, la sensorización y
-									automatización, la movilidad eléctrica y las energías renovables.Como “hobbie” desarrollo modestos proyectos basados en microcontroladores
-										(Arduino).</p>
+								<p>Tengo buenas aptitudes respecto a la automatización de procesos y sus sensores, tanto conmicrocontroladores como con autómatas industriales.
+								También tengo conocimientos sobre hardware eléctrico y de automatización industrial..</p>
 
 							</div>
 							<div class="tab_datos_interes" id="lorem">
-								<p>Realizo actividades en contacto con la naturaleza, senderismo, ciclismo...</p>
+								<p>Por último con relación a instalaciones eléctricas industriales conozco el R.E.B.T, cálculos de tomas de tierra, realización de inspecciones de cuadros eléctricos y su verificación. (medir tomas de tierra, tensión de contacto…)</p>
 
 							</div>
 						</div>
@@ -646,7 +653,7 @@
       <div class="form-group">
       <textarea class="form-control" rows="6" placeholder="MESSAGE" name="message"></textarea>
       
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+      <button class="btn_a btn-primary send-button" id="submit" type="submit" value="SEND">
         <div class="button">
           <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
         </div>
