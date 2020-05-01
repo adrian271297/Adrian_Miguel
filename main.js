@@ -154,7 +154,6 @@ class Accordion{
 		this.accordion.querySelectorAll(".item header").forEach(itemHeader =>{
 			itemHeader.addEventListener("click",()=>{
 				let item = itemHeader.parentNode;
-
 				this.validateMultiple(item);
 				item.classList.toggle("active");
 			})
@@ -166,7 +165,6 @@ class Accordion{
 
 		this.accordion.querySelectorAll(".item").forEach(item => {
 			if(selectedItem == item) return;
-
 			item.classList.remove("active");
 	})
 	}
@@ -520,6 +518,13 @@ function btn_contacto(){
 	var area_contacto= document.getElementById('contacto');
 
  area_contacto.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ $('nav ul li').removeClass("show");
+		$('.logo-space').removeClass("change");
+		$('#contenedor').addClass("container_nav");
+		$('#contenedor').removeClass("container_on");
+		$('nav ul').addClass("naveg");
+		$('.fa-bars').css("display","block");
+		$('.fa-times').css("display","none");
 };
 
 /*--------------boton presentacion--------------------*/
@@ -527,12 +532,26 @@ function btn_presentacion(){
 	var area_presentacion= document.getElementById('presentacion');
 
  area_presentacion.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ $('nav ul li').removeClass("show");
+		$('.logo-space').removeClass("change");
+		$('#contenedor').addClass("container_nav");
+		$('#contenedor').removeClass("container_on");
+		$('nav ul').addClass("naveg");
+		$('.fa-bars').css("display","block");
+		$('.fa-times').css("display","none");
 };
 /*--------------boton situacion actual--------------------*/
 function btn_sit_actual(){
 	var area_sit_actual= document.getElementById('actual');
 
  area_sit_actual.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ $('nav ul li').removeClass("show");
+		$('.logo-space').removeClass("change");
+		$('#contenedor').addClass("container_nav");
+		$('#contenedor').removeClass("container_on");
+		$('nav ul').addClass("naveg");
+		$('.fa-bars').css("display","block");
+		$('.fa-times').css("display","none");
 };
 
 /*--------------boton situacion actual--------------------*/
@@ -540,6 +559,13 @@ function btn_for_acad(){
 	var area_for_acad= document.getElementById('formacion');
 
  area_for_acad.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ $('nav ul li').removeClass("show");
+		$('.logo-space').removeClass("change");
+		$('#contenedor').addClass("container_nav");
+		$('#contenedor').removeClass("container_on");
+		$('nav ul').addClass("naveg");
+		$('.fa-bars').css("display","block");
+		$('.fa-times').css("display","none");
 };
 
 /*--------------boton software--------------------*/
@@ -547,24 +573,52 @@ function btn_software(){
 	var area_software= document.getElementById('software_id');
 
  area_software.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ $('nav ul li').removeClass("show");
+		$('.logo-space').removeClass("change");
+		$('#contenedor').addClass("container_nav");
+		$('#contenedor').removeClass("container_on");
+		$('nav ul').addClass("naveg");
+		$('.fa-bars').css("display","block");
+		$('.fa-times').css("display","none");
 };
 /*--------------boton interes--------------------*/
 function btn_interes(){
 	var area_interes= document.getElementById('interes');
 
  area_interes.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ $('nav ul li').removeClass("show");
+		$('.logo-space').removeClass("change");
+		$('#contenedor').addClass("container_nav");
+		$('#contenedor').removeClass("container_on");
+		$('nav ul').addClass("naveg");
+		$('.fa-bars').css("display","block");
+		$('.fa-times').css("display","none");
 };
 /*--------------boton laboral--------------------*/
 function btn_exp_laboral(){
 	var area_laboral= document.getElementById('exp_laboral');
 
  area_laboral.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ $('nav ul li').removeClass("show");
+		$('.logo-space').removeClass("change");
+		$('#contenedor').addClass("container_nav");
+		$('#contenedor').removeClass("container_on");
+		$('nav ul').addClass("naveg");
+		$('.fa-bars').css("display","block");
+		$('.fa-times').css("display","none");
 };
 /*--------------boton aptitudes--------------------*/
 function btn_aptitudes(){
 	var area_aptitudes= document.getElementById('aptitudes');
 
  area_aptitudes.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ $('nav ul li').removeClass("show");
+		$('.logo-space').removeClass("change");
+		$('#contenedor').addClass("container_nav");
+		$('#contenedor').removeClass("container_on");
+		$('nav ul').addClass("naveg");
+		$('.fa-bars').css("display","block");
+		$('.fa-times').css("display","none");
 };
 
 
